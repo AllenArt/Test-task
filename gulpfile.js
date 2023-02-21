@@ -23,7 +23,7 @@ function clear() {
 
 function server() {
   sync.init({
-    server:"./source"
+    server:""
   })
 
   watch("source/**.html").on("change", sync.reload)
