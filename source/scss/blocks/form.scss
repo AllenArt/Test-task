@@ -1,0 +1,72 @@
+.form__fieldset {
+  border: none;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.form__header {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+
+  @include section-heading (18px, 24px);
+
+  @media (min-width: $desktop-width) {
+    @include section-heading(20px, 26px);
+  }
+}
+
+.form__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 18px;
+  border: 1px solid $border-main;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  background-color: $background-secondary;
+  outline: none;
+  vertical-align: center;
+
+  &::placeholder {
+    color: $main-dark;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    border-color: $border-secondary;
+  }
+
+  &:focus {
+    background-color: $main-light;
+    border-color: $border-secondary;
+  }
+
+  &:disabled::placeholder {
+    color: $border-secondary;
+  }
+}
+
+.form__input:checked {
+  border: 2px solid $brand;
+}
+
+.form__input:last-child {
+  margin-bottom: 0;
+}
+
+.form__input--error {
+  background-color: $background-danger;
+  border-color: $danger;
+
+  &:hover {
+    background-color: $background-danger;
+    border-color: $danger;
+  }
+}

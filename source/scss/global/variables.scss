@@ -1,0 +1,33 @@
+$main-dark: #000000;
+$main-light: #FFFFFF;
+$text-secondary: #6B6B6B;
+$text-addition: #A6A4A0;
+$text-disable: #A6A4A0;
+$background-secondary: #F7F7F5;
+$background-accent: #EDECEA;
+$border-main: #E4E4E4;
+$border-secondary: #C3C2BE;
+$brand: #3D3BFF;
+$sale: #FFF705;
+$danger: #FF5733;
+$background-danger: #FFCDC2;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-width-big: 1280px;
+
+@mixin main-background ($color: #DCF4FE) {
+  background-color: $color;
+}
+
+@mixin section-padding ($vertical, $horizontal) {
+  padding: $vertical $horizontal;
+}
+
+@mixin section-heading ($font, $line) {
+  font-size: $font;
+  line-height: $line;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+}

@@ -1,0 +1,38 @@
+.contact {
+  @include section-padding (20px, 0);
+}
+
+.contact__header {
+  @include section-heading(18px, 24px);
+}
+
+.contact__button {
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: $main-light;
+  height: 56px;
+  border: none;
+  border-radius: 12px;
+  background-color: $brand;
+  margin-bottom: 16px;
+
+  &:hover {
+    background-color: $main-dark;
+    color: $main-light;
+  }
+
+  &:disabled {
+    background-color: $background-accent;
+    color: $border-secondary;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 191px;
+  }
+}
+
+.contact__agreement {
+  color: $text-secondary;
+}

@@ -1,0 +1,43 @@
+.payment {
+  @include section-padding (20px, 0);
+}
+
+.payment__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+
+  @media (min-width: $desktop-width) {
+    gap: 8px;
+  }
+}
+
+.payment__item {
+  display: grid;
+  gap: 12px;
+  align-content: space-between;
+  padding: 12px;
+  outline: 1px solid $border-main;
+  border-radius: 12px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    @media (min-width: $desktop-width) {
+      outline: 1px solid #3D3BFF;
+    }
+  }
+}
+
+.payment__logo-wrapper {
+  height: 16px;
+}
+
+.payment__checked {
+  outline: 2px solid $brand;
+}

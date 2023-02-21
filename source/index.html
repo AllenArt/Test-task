@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Корзина</title>
+</head>
+<body class="page__body">
+
+<main class="page-main">
+  <div class="page-main__section-wrapper">
+    <h1 class="page__header">Заполните форму,<br> чтобы оформить заказ</h1>
+    <p class="page__intro">Забронируйте курсы со скидкой, а мы перезвоним, проконсультируем и оформим заказ.</p>
+
+    <section class="total-cost">
+      <h2 class="total-cost__header">Итоговая стоимость</h2>
+      <div class="total-cost__wrapper">
+        <p class="total-cost__previous-cost"><del>000 000 ₽</del></p>
+        <p class="total-cost__current-cost">0 000<sup>₽/mec.</sup></p>
+        <p class="total-cost__instalment">Рассрочка на NN месяцев</p>
+        <p class="total-cost__sale-sticker">–00%</p>
+      </div>
+    </section>
+  </div>
+    
+  <form class="form page-main__section-wrapper"  method="get" action="https://echo.htmlacademy.ru/">
+    <div class="payment">
+      <fieldset class="form__fieldset payment__list">
+        <legend class="form__header">Выберите вариант оплаты</legend>
+        <label class="payment__item" tabindex="0">
+          <input class="visually-hidden" type="radio" name="payment-type" value="consiltation">
+          <p>Оставить заявку на консультацию</p>
+        </label>
+        <label class="payment__item" tabindex="0">
+          <input class="visually-hidden" type="radio" name="payment-type" value="pay-with-sale">
+          <p>Оплатить всю сумму со скидкой 7000 ₽</p>
+            <div class="payment__logo-wrapper">
+              <img src="img/visa.svg" width="25" height="16" alt="">
+              <img src="img/mir.svg" width="29" height="16" alt="">
+              <img src="img/masterCard.svg" width="14" height="16" alt="">
+            </div>
+        </label>
+        <label class="payment__item" tabindex="0">
+          <input class="visually-hidden" name="payment-type" type="radio" value="insaltment-sber">
+          <p>В рассрочку в Покупай со Сбером</p>
+          <img src="img/sber.svg" width="19" height="16" alt="">
+        </label>
+        <label class="payment__item">
+          <input class="visually-hidden" name="payment-type" type="radio" value="insaltment-tinkoff">
+          <p>В рассрочку в Тинькофф</p>
+          <img src="img/tinkoff.svg" width="61" height="16" alt="">
+        </label>
+      </fieldset>
+    </div>
+    <div class="contact">
+      <fieldset class="form__fieldset contact__form">
+        <legend  class="form__header">Заполните контактные данные</legend>
+          <input class="form__input form__input--name" type="text" name="name" placeholder="Имя" aria-labelledby="Имя">
+          <input class="form__input form__input--phone" type="tel" name="phone" placeholder="Телефон" aria-labelledby="Номер телефона">
+          <input class="form__input form__input--email" type="email" name="email" placeholder="Электронная почта" aria-labelledby="Электронная почта">
+      </fieldset>
+      <button class="contact__button">Отправить</button>
+      <p class="contact__agreement">Нажимая на кнопку, я соглашаюсь на <a class="contact__agreement-link" href="#">обработку персональных данных</a> и <a class="contact__agreement-link" href="#">с правилами пользования Платформой</a></p>
+    </div>
+  </form> 
+</main>
+<script src="script/payment.js"></script>
+<script src="script/form.js"></script>
+</body>
+</html>

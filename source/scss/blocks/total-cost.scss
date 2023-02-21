@@ -1,0 +1,71 @@
+.total-cost {
+  @include section-padding (20px, 0);
+  margin-top: auto;
+}
+
+.total-cost__wrapper {
+  position: relative;
+  background-color: $background-secondary;
+  border-radius: 12px;
+  padding: 16px;
+
+  @media (min-width: $desktop-width) {
+    padding: 20px;
+  }
+}
+
+.total-cost__header {
+  @include section-heading(18px, 24px);
+
+  @media (min-width: $desktop-width) {
+    @include section-heading(20px, 26px);
+  }
+}
+
+.total-cost__previous-cost {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.total-cost__current-cost {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.total-cost__instalment {
+  margin: 0;
+}
+
+.total-cost__sale-sticker {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 500;
+  margin: 0;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  text-align: center;
+  background-image: url("../../img/star.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    right: 20px;
+  }
+}
